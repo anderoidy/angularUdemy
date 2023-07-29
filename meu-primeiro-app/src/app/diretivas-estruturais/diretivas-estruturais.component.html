@@ -1,0 +1,18 @@
+
+
+<p>diretivas esturturais</p>
+{{date | date: 'dd/MM/YYYY'}}
+
+Nome: <input type="text" [(ngModel)]="nomePessoa" >
+Numero do Bloco: <input type="text" [(ngModel)]="numeroDoBloco">
+Apartamento: <input type="text" [(ngModel)]="numeroApartamento">
+<hr>
+  <li *ngFor="let item of listNome let i = index" (click)="onClickEventListNome(i) " >  {{"Nome = " + item.nomePessoa }} </li>
+  <li *ngFor="let item of listBloco let i = index"(click)="onClickEventListBlo(i)"> {{"Bloco = " + item.numeroDoBloco}} </li>
+  <li *ngFor="let item of listApartamento let i = index"  (click)="onClickEventListAp(i) "> {{"Apartamento = " + item.numeroApartamento}} </li>
+<hr>
+<br>
+<hr>
+<button (click)="onClickAddPesNaList()">Salvar</button>
+
+

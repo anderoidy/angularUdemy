@@ -1,0 +1,44 @@
+<h1>Curso de Angular</h1>
+<p>data-biding works!</p>
+<h1>Interpolation</h1>
+{{ nome }}
+<br>
+
+{{ mesagem }}
+<!-- usando o bainding -->
+<p>Sobre nome vindo com baiding</p>
+{{sobrenome}}
+
+<!-- propet binding -->
+<p>Sobre noome vindo com propt binding</p>
+<img [src]="imgSrC" [alt]="sobrenome">
+
+<button (click)="somar()">Somar</button>
+
+<h2>{{idade > 40}}</h2>
+
+{{idade + maisUm + 3}}
+
+{{somar()}}
+
+<button (click)="mostrarMensagemErro()">Cadastrar</button>
+
+<h1 style="color: red;">Propeti biding </h1>
+
+<button [disabled]="estadoDoBotao">Botao</button>
+<img [src]="imgSrC" [alt]="imgTitle">
+
+<button (click)="mostrarAlerta($event)">Ver se da bom</button>
+
+<div (mousemove)="mouseMoveTeste($event)" style="background: red; width: 300px; height: 300px;"></div>
+
+{{position.x}} - {{position.y}}
+
+<input [(ngModel)]="nome">
+{{nome}}
+<h2>{{nome}}</h2>
+
+<br>
+<br>
+
+
