@@ -1,0 +1,36 @@
+{
+  "list-food": [
+    {
+      "id": 1,
+      "nome": "arroz"
+    },
+    {
+      "id": 2,
+      "nome": "Feijao"
+    },
+    {
+      "id": 3,
+      "nome": "macarrao"
+    },
+    {
+      "id": 4,
+      "nome": "Ovo"
+    },
+    {
+      "nome": "bife",
+      "id": 5
+    },
+    {
+      "nome": "costela",
+      "id": 6
+    },
+    {
+      "nome": "coco",
+      "id": 7
+    },
+    {
+      "nome": "coco",
+      "id": 8
+    }
+  ]
+}

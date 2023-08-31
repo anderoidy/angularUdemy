@@ -15,7 +15,6 @@ export class DiretivasEstruturaisComponent {
   public numeroApartamento: string = ""
   public date: Date = new Date()
 
-
   constructor() { }
 
   ngOnInit(): void {

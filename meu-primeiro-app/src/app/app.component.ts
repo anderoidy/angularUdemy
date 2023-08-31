@@ -15,7 +15,11 @@ import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas
 </ng-template>
   <app-output (enviarDados)="setDados($event)"></app-output>
   <app-input> [contador] ="addValue"</app-input>
-  <router-outlet></router-outlet>
+  <app-food-list></app-food-list>
+  <app-food-add></app-food-add>
+
+
+
   <app-diretivas-estruturais>
     <!-- <h1>H1 com hr em baixo dentro do estrutural</h1>
     <hr> -->
