@@ -24,7 +24,8 @@ import { FoodAddComponent } from './food-add/food-add.component';
     InputComponent,
     OutputComponent,
     FoodListComponent,
-    FoodAddComponent
+    FoodAddComponent,
+    FormsModule
   ],
 
   imports: [

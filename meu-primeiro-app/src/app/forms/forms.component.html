@@ -1,0 +1,87 @@
+<p>forms works!</p>
+<!--template ref ferramenta ngForm a partir no nosso template ref-->
+<form #submitForm="ngForm">
+  <label>
+    Nome:
+    <input type="text" name="nome" #nome="ngModel" [ngModel]="nome.value" required>
+<span *ngIf="!nome.valid && (nome.dirty && nome.touched)">
+  invalid nao pode deixar em branco
+</span>
+  </label>
+
+  <br>
+  <br>
+
+{{ nome.valid }}
+{{ nome.dirty }}
+{{ nome.touched }}
+<!--Aqui aonde mostra quem ta valido se true ou false-->
+<!-- {{ submitForm.valid }} -->
+<!--
+    valid
+    dirty
+    touched
+-->
+
+  <br>
+  <br>
+
+  <label>
+    Masculino:
+    <input type="radio" name="sexo" value="Masculino" ngModel>
+  </label>
+
+  <br>
+  <br>
+
+  <label>
+    Feminino:
+    <input type="radio" name="sexo" value="Feminino" ngModel>
+  </label>
+
+  <br>
+  <br>
+
+  <label>
+    Outros:
+    <input type="radio" name="sexo" value="Outros" ngModel>
+  </label>
+
+  <br>
+  <br>
+
+  <label>
+    Angular:
+    <input type="checkbox" name="angular" ngModel>
+  </label>
+
+  <br>
+  <br>
+
+  <label>
+    Vue:
+    <input type="checkbox" name="vue" ngModel>
+  </label>
+
+  <br>
+  <br>
+
+  <label>
+    React:
+    <input type="checkbox" name="react" ngModel>
+  </label>
+
+  <br>
+  <br>
+
+  <select name="comidas" ngModel>
+    <option value="">Selecione uma comida</option>
+    <option *ngFor="let item of listComidas" [ngValue]="item">
+    {{item.comida}} - {{item.preco}}
+    </option>
+  </select>
+</form>
+
+<br>
+<br>
+{{ submitForm.value | json}}

@@ -17,6 +17,7 @@ import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas
   <app-input> [contador] ="addValue"</app-input>
   <app-food-list></app-food-list>
   <app-food-add></app-food-add>
+  <app-forms></app-forms>
 
 
 
