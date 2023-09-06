@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-forms',
@@ -17,5 +18,9 @@ export class FormsComponent implements OnInit {
 
   ngOnInit(): void {
 
+  }
+
+  public MtdSubmitForm(submitForm: NgForm) {
+    console.log(submitForm.value)
   }
 }

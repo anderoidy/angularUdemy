@@ -1,6 +1,6 @@
 <p>forms works!</p>
 <!--template ref ferramenta ngForm a partir no nosso template ref-->
-<form #submitForm="ngForm">
+<form #submitForm="ngForm" (ngSubmit)="MtdSubmitForm(submitForm)">
   <label>
     Nome:
     <input type="text" name="nome" #nome="ngModel" [ngModel]="nome.value" required>
@@ -80,7 +80,11 @@
     {{item.comida}} - {{item.preco}}
     </option>
   </select>
+<br>
+<br>
+  <button [disabled]="submitForm.invalid">Enviar Dados</button>
 </form>
+
 
 <br>
 <br>
